@@ -1,0 +1,9 @@
+<div class="movie-results-container container">
+  <div class="row">
+    <div class="movie-results" ng-repeat="mov in ctrl.movies">
+      <div class="col-md-4" ng-show="mov.Poster !== 'N/A' && mov.Type === 'movie'">
+        <dm-movie movie-data="mov"></dm-movie>
+      </div>
+    </div>
+  </div>
+</div>
